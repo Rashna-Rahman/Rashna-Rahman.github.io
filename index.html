@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rashna Rahman Richita | CSE Undergraduate, AIUB</title>
+  <meta name="description" content="Portfolio of Rashna Rahman Richita, Computer Science and Engineering undergraduate at AIUB with interests in software development, web technologies, databases and cybersecurity.">
+
+  <!-- Open Graph (edit these if you change your name or host the site) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Rashna Rahman Richita | CSE Undergraduate">
+  <meta property="og:description" content="Software development, web technologies, databases, cybersecurity and research on multilingual phishing detection.">
+  <meta property="og:image" content="assets/images/profile.jpg">
+
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+
+  <!-- Font: Inter. If offline, system fonts are used automatically. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+
+<!-- ============ ICON SET (inline SVG, no external library needed) ============ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.11.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.56-.29-5.25-1.28-5.25-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.39-5.27 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.68.8.56A11.5 11.5 0 0 0 12 .5Z"/></symbol>
+  <symbol id="i-linkedin" viewBox="0 0 24 24"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M4 5h16a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Zm-1 1 9 7 9-7"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M5 3h3l2 5-2.5 1.5a11 11 0 0 0 7 7L16 14l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2Z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Zm0-9a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/></symbol>
+  <symbol id="i-download" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19h14"/></symbol>
+  <symbol id="i-code" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="m8 7-5 5 5 5m8-10 5 5-5 5M14 4l-4 16"/></symbol>
+  <symbol id="i-cpu" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M7 7h10v10H7zM10 10h4v4h-4zM9 3v4m6-4v4M9 17v4m6-4v4M3 9h4m-4 6h4m10-6h4m-4 6h4"/></symbol>
+  <symbol id="i-db" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M4 6c0-1.66 3.58-3 8-3s8 1.34 8 3-3.58 3-8 3-8-1.34-8-3Zm0 0v12c0 1.66 3.58 3 8 3s8-1.34 8-3V6M4 12c0 1.66 3.58 3 8 3s8-1.34 8-3"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Zm-9-9h18M12 3c2.5 2.5 3.8 5.5 3.8 9S14.5 18.5 12 21c-2.5-2.5-3.8-5.5-3.8-9S9.5 5.5 12 3Z"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 3 4.5 6v5.5c0 4.6 3.1 8.4 7.5 9.5 4.4-1.1 7.5-4.9 7.5-9.5V6L12 3Zm-3 9 2 2 4-4"/></symbol>
+  <symbol id="i-tool" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M14.7 6.3a4 4 0 0 0 5 5L21 13l-8 8-4-4 8-8-1.3-1.3a4 4 0 0 0-5-5L13 5l-2 2-2-2 2.3-2.3M3 21l4-4"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M4 20V4m0 16h16M8 16l4-5 3 3 5-6"/></symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16v14H4zM4 10h16M8 3v4m8-4v4M8 14h3m2 0h3m-8 3h3"/></symbol>
+  <symbol id="i-shapes" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M8 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm5 2h8v8h-8zM3 21l4-7 4 7z"/></symbol>
+  <symbol id="i-map" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="m3 6 6-2 6 2 6-2v14l-6 2-6-2-6 2V6Zm6-2v14m6-12v14"/></symbol>
+  <symbol id="i-award" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 15a6 6 0 1 0 0-12 6 6 0 0 0 0 12Zm-3.5-1L7 21l5-3 5 3-1.5-7"/></symbol>
+  <symbol id="i-mic" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 3a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3Zm-6 9a6 6 0 0 0 12 0m-6 6v3"/></symbol>
+  <symbol id="i-bag" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M5 8h14l-1 12H6L5 8Zm4 0V6a3 3 0 0 1 6 0v2"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path fill="currentColor" d="M8 5.5v13a1 1 0 0 0 1.5.86l10.5-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5Z"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M6 6l12 12M18 6 6 18"/></symbol>
+  <symbol id="i-arrow-up" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 19V5m-6 6 6-6 6 6"/></symbol>
+  <symbol id="i-cap" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M2 9l10-5 10 5-10 5L2 9Zm4 2v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5m4-2v6"/></symbol>
+</svg>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ======================= HEADER ======================= -->
+<header class="header" id="header">
+  <nav class="nav container" aria-label="Main">
+    <a href="#home" class="wordmark" aria-label="Richita, back to top">RICHITA<span>.</span></a>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#meet-me">Video</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li class="nav-cv-mobile"><a class="btn btn-primary btn-block" href="assets/documents/CV.pdf" download="Rashna_Rahman_Richita_CV.pdf" data-download>Download CV</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <a class="btn btn-primary btn-sm nav-cv" href="assets/documents/CV.pdf" download="Rashna_Rahman_Richita_CV.pdf" data-download aria-label="Download CV (PDF)">
+        <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg>Download CV
+      </a>
+      <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="nav-links">
+        <span class="menu-bar" aria-hidden="true"></span>
+        <span class="sr-only">Open menu</span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- ======================= HERO ======================= -->
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="availability"><span class="dot" aria-hidden="true"></span>Open to opportunities in CSE-related roles</p>
+        <h1 class="hero-title">Rashna Rahman Richita</h1>
+        <p class="hero-headline">Building software across the web, desktop and database layers.</p>
+        <p class="hero-label">CSE Undergraduate · Software Development · Web Technologies · Databases · Cybersecurity</p>
+        <p class="hero-text">
+          I’m a Computer Science and Engineering undergraduate at AIUB with hands-on experience in
+          software development, database management, web technologies, and basic cybersecurity and
+          ethical hacking. I enjoy turning ideas into working applications and exploring research in
+          machine learning and NLP.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">Explore My Projects</a>
+          <a href="assets/documents/CV.pdf" download="Rashna_Rahman_Richita_CV.pdf" data-download class="btn btn-outline">
+            <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg>Download CV
+          </a>
+          <!-- Cover letter button: appears automatically once DOCUMENTS.coverLetter is set in js/script.js -->
+          <a href="assets/documents/Cover_Letter.pdf" download="Rashna_Rahman_Richita_Cover_Letter.pdf" data-download data-doc="cover" class="btn btn-outline" hidden>
+            <svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>Cover Letter
+          </a>
+          <a href="#contact" class="btn btn-ghost">Contact Me</a>
+        </div>
+
+        <ul class="hero-social" aria-label="Profiles">
+          <li><a data-config="github" href="#" target="_blank" rel="noopener" aria-label="GitHub profile"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg>GitHub</a></li>
+          <li><a data-config="linkedin" href="#" target="_blank" rel="noopener" aria-label="LinkedIn profile"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg>LinkedIn</a></li>
+          <li><a data-config="email" href="#" aria-label="Send an email"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>Email</a></li>
+        </ul>
+      </div>
+
+      <div class="hero-visual">
+        <div class="portrait">
+          <!-- Replace assets/images/profile.jpg to change your photo -->
+          <img src="assets/images/profile.jpg" alt="Portrait of Rashna Rahman Richita" width="800" height="1000">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= ABOUT ======================= -->
+  <section class="section" id="about" aria-labelledby="about-title">
+    <div class="container about-grid">
+      <div class="reveal">
+        <p class="eyebrow">About me</p>
+        <h2 id="about-title">A CSE student who likes building things that work.</h2>
+      </div>
+
+      <div class="about-text reveal">
+        <p class="lead">I’m studying Computer Science and Engineering at American International University-Bangladesh (AIUB), with a CGPA of 3.80 out of 4.00. I expect to graduate in 2027.</p>
+        <p>Through individual and group projects I have built web applications, a browser game and desktop systems, working with Java, C, C++, C#, JavaScript and React.js, and with databases including Oracle, SQL and PL/SQL. I also have a foundation in basic cybersecurity and ethical hacking, using Kali Linux, Linux and VirtualBox.</p>
+        <p>My thesis is currently ongoing. It focuses on detecting AI-generated multilingual phishing attacks using machine learning, deep learning and Natural Language Processing.</p>
+        <p>I’m looking for opportunities in cybersecurity, IT, database management, software development and other CSE-related roles where I can apply what I have learned and contribute to innovative projects.</p>
+      </div>
+
+      <div class="about-side reveal">
+        <div class="mini-card">
+          <h3>At a glance</h3>
+          <dl class="lang glance">
+            <div><dt>University</dt><dd>AIUB, BSc in CSE</dd></div>
+            <div><dt>CGPA</dt><dd>3.80 / 4.00</dd></div>
+            <div><dt>Expected graduation</dt><dd>2027</dd></div>
+            <div><dt>Thesis</dt><dd>Ongoing</dd></div>
+            <div><dt>Location</dt><dd>Dhaka, Bangladesh</dd></div>
+          </dl>
+        </div>
+        <div class="mini-card">
+          <h3>Areas of interest</h3>
+          <ul class="chips">
+            <li>Cybersecurity</li><li>Ethical Hacking</li><li>Database Management</li>
+            <li>Software Development</li><li>Web Development</li><li>Data Analysis</li>
+            <li>Machine Learning</li><li>Natural Language Processing</li>
+          </ul>
+        </div>
+        <div class="mini-card">
+          <h3>Languages</h3>
+          <dl class="lang">
+            <div><dt>Bangla</dt><dd>Native</dd></div>
+            <div><dt>English</dt><dd>Professional working proficiency</dd></div>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= SKILLS ======================= -->
+  <!-- To edit skills: change the <li> items inside each card. Copy a whole .skill-card to add a category. -->
+  <section class="section section-alt" id="skills" aria-labelledby="skills-title">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Technical skills</p>
+        <h2 id="skills-title">What I work with</h2>
+      </div>
+
+      <div class="skills-grid">
+        <article class="skill-card reveal">
+          <div class="skill-icon"><svg class="icon" aria-hidden="true"><use href="#i-code"/></svg></div>
+          <h3>Programming languages</h3>
+          <ul class="chips"><li>Java</li><li>C</li><li>C++</li><li>C#</li><li>JavaScript</li></ul>
+        </article>
+        <article class="skill-card reveal">
+          <div class="skill-icon"><svg class="icon" aria-hidden="true"><use href="#i-cpu"/></svg></div>
+          <h3>Core computer science</h3>
+          <ul class="chips"><li>Object-Oriented Programming (OOP)</li><li>Data Structures &amp; Algorithms</li></ul>
+        </article>
+        <article class="skill-card reveal">
+          <div class="skill-icon"><svg class="icon" aria-hidden="true"><use href="#i-db"/></svg></div>
+          <h3>Database</h3>
+          <ul class="chips"><li>Oracle Database</li><li>SQL</li><li>PL/SQL</li><li>Advanced Database Management</li></ul>
+        </article>
+        <article class="skill-card reveal">
+          <div class="skill-icon"><svg class="icon" aria-hidden="true"><use href="#i-globe"/></svg></div>
+          <h3>Web technologies</h3>
+          <ul class="chips"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>React.js</li></ul>
+        </article>
+        <article class="skill-card reveal">
+          <div class="skill-icon"><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg></div>
+          <h3>Cybersecurity</h3>
+          <ul class="chips"><li>Basic Cybersecurity</li><li>Ethical Hacking</li><li>Kali Linux</li><li>Linux</li><li>VirtualBox</li></ul>
+        </article>
+        <article class="skill-card reveal">
+          <div class="skill-icon"><svg class="icon" aria-hidden="true"><use href="#i-tool"/></svg></div>
+          <h3>Development tools</h3>
+          <ul class="chips"><li>Visual Studio</li><li>Code::Blocks</li><li>Notepad++</li><li>Canva</li></ul>
+        </article>
+        <article class="skill-card skill-card-wide reveal">
+          <div class="skill-icon skill-icon-teal"><svg class="icon" aria-hidden="true"><use href="#i-chart"/></svg></div>
+          <h3>Research technologies &amp; methods</h3>
+          <ul class="chips"><li>Python</li><li>Machine Learning</li><li>Deep Learning</li><li>Natural Language Processing (NLP)</li><li>Dataset Preprocessing and Analysis</li></ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= PROJECTS ======================= -->
+  <!-- Project cards are generated from the PROJECTS list at the top of js/script.js -->
+  <section class="section" id="projects" aria-labelledby="projects-title">
+    <div class="container">
+      <div class="section-head section-head-row reveal">
+        <div>
+          <p class="eyebrow">Projects</p>
+          <h2 id="projects-title">Projects</h2>
+        </div>
+        <div class="filters" id="filters" role="group" aria-label="Filter projects by type"></div>
+      </div>
+
+      <div class="project-grid" id="project-grid"></div>
+      <p class="empty-state" id="empty-state" hidden>No projects in this category yet.</p>
+      <noscript><p class="empty-state">Please enable JavaScript to view the project cards.</p></noscript>
+    </div>
+  </section>
+
+  <!-- Project details popup (filled in by js/script.js) -->
+  <dialog class="modal" id="project-modal" aria-labelledby="modal-title">
+    <div class="modal-inner">
+      <button class="modal-close" type="button" id="modal-close" aria-label="Close project details">
+        <svg class="icon" aria-hidden="true"><use href="#i-close"/></svg>
+      </button>
+      <div class="modal-head">
+        <div class="project-icon" id="modal-icon"></div>
+        <div>
+          <p class="project-meta" id="modal-meta"></p>
+          <h3 id="modal-title"></h3>
+        </div>
+      </div>
+      <p id="modal-desc"></p>
+      <h4>Highlights</h4>
+      <ul class="modal-list" id="modal-highlights"></ul>
+      <h4>Technologies</h4>
+      <ul class="chips" id="modal-tech"></ul>
+      <div class="modal-links" id="modal-links"></div>
+    </div>
+  </dialog>
+
+  <!-- ======================= RESEARCH ======================= -->
+  <section class="section research" id="research" aria-labelledby="research-title">
+    <div class="container">
+      <div class="research-card reveal">
+        <div class="research-head">
+          <p class="eyebrow eyebrow-light">Research / Thesis · <span class="status">Ongoing</span></p>
+          <h2 id="research-title">Hybrid Deep Learning-Based Detection of AI-Generated Multilingual Phishing Attacks</h2>
+          <p class="research-focus">Conducting research on detecting AI-generated multilingual phishing attacks using machine learning and deep learning techniques.</p>
+        </div>
+
+        <div class="research-body">
+          <div>
+            <h3>Research activities</h3>
+            <ul class="check-list">
+              <li>Collecting, cleaning, preprocessing and analyzing multilingual phishing and legitimate message datasets.</li>
+              <li>Exploring Natural Language Processing techniques for multilingual text classification and phishing detection.</li>
+              <li>Developing a deep learning-based approach for detecting AI-generated phishing messages.</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Technologies &amp; methods</h3>
+            <ul class="chips chips-light">
+              <li>Python</li><li>Machine Learning</li><li>Deep Learning</li><li>Natural Language Processing (NLP)</li><li>Dataset Preprocessing and Analysis</li>
+            </ul>
+          </div>
+        </div>
+
+        <figure class="flow">
+          <figcaption>Conceptual workflow (not a final architecture)</figcaption>
+          <ol>
+            <li><span>1</span>Multilingual data</li>
+            <li><span>2</span>Preprocessing</li>
+            <li><span>3</span>NLP &amp; model development</li>
+            <li><span>4</span>Phishing detection evaluation</li>
+          </ol>
+        </figure>
+
+        <!-- FUTURE: add your abstract, paper PDF or publication link here, e.g.
+             <p><a href="assets/documents/thesis.pdf">Read the thesis (PDF)</a></p> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= EDUCATION ======================= -->
+  <section class="section section-alt" id="education" aria-labelledby="education-title">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Education</p>
+        <h2 id="education-title">Academic background</h2>
+      </div>
+
+      <ol class="timeline">
+        <li class="timeline-item reveal">
+          <div class="tl-card">
+            <p class="tl-when">Expected graduation 2027</p>
+            <h3>Bachelor of Science in Computer Science and Engineering</h3>
+            <p class="tl-school">American International University-Bangladesh (AIUB)</p>
+            <p class="tl-score">CGPA 3.80 / 4.00</p>
+          </div>
+        </li>
+        <li class="timeline-item reveal">
+          <div class="tl-card">
+            <p class="tl-when">Higher Secondary</p>
+            <h3>Higher Secondary Certificate (HSC)</h3>
+            <p class="tl-school">Dhaka Commerce College</p>
+            <p class="tl-score">GPA 5.00 / 5.00</p>
+          </div>
+        </li>
+        <li class="timeline-item reveal">
+          <div class="tl-card">
+            <p class="tl-when">Secondary</p>
+            <h3>Secondary School Certificate (SSC)</h3>
+            <p class="tl-school">Monipur High School and College</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ======================= ACHIEVEMENTS & CERTIFICATION ======================= -->
+  <section class="section" id="achievements" aria-labelledby="achievements-title">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Achievements</p>
+        <h2 id="achievements-title">Recognition &amp; certification</h2>
+      </div>
+
+      <div class="ach-grid">
+        <article class="ach-card ach-award reveal">
+          <div class="ach-badge"><svg class="icon" aria-hidden="true"><use href="#i-award"/></svg>3rd Place</div>
+          <h3>IEOM Poster Competition, 2024</h3>
+          <p class="muted">7th Bangladeshi International Conference on Industrial Engineering and Operations Management (IEOM), AIUB</p>
+          <p class="ach-title"><span>Poster</span>“Rise of Self-Learning in Bangladesh: AI Tools &amp; EdTech Support Role in Modern Bangladesh.”</p>
+        </article>
+
+        <article class="ach-card reveal">
+          <div class="ach-badge ach-badge-blue"><svg class="icon" aria-hidden="true"><use href="#i-mic"/></svg>Oral Presentation</div>
+          <h3>IEOM International Conference, 2024</h3>
+          <p class="muted">7th Bangladeshi International Conference on Industrial Engineering and Operations Management (IEOM), AIUB</p>
+          <p class="ach-title"><span>Presented</span>“Rise of Self-Learning in Bangladesh: AI Tools &amp; EdTech Support Role in Modern Bangladesh.”</p>
+        </article>
+
+        <article class="ach-card ach-cert reveal" id="certification">
+          <div class="ach-badge ach-badge-teal"><svg class="icon" aria-hidden="true"><use href="#i-cap"/></svg>Certification</div>
+          <div class="cert-row">
+            <div>
+              <h3>Data Analysis with Python</h3>
+              <p class="muted">Institute of Information Technology (IIT), Jahangirnagar University</p>
+            </div>
+            <dl class="cert-meta">
+              <div><dt>Course period</dt><dd>November 2024 – January 2025</dd></div>
+              <div><dt>Duration</dt><dd>60 hours</dd></div>
+              <div><dt>Year</dt><dd>2025</dd></div>
+            </dl>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= MEET ME (VIDEO) ======================= -->
+  <!--
+    HOW TO ADD YOUR VIDEO
+    Option A (local file): save your video as  assets/videos/introduction.mp4  and refresh.
+    Option B (YouTube): paste the video link into YOUTUBE_URL at the top of js/script.js.
+    Until one of them is set, a "coming soon" placeholder is shown.
+  -->
+  <section class="section section-alt" id="meet-me" aria-labelledby="video-title">
+    <div class="container video-grid">
+      <div class="reveal">
+        <p class="eyebrow">Personal introduction</p>
+        <h2 id="video-title">Meet me</h2>
+        <p class="muted">A short video introduction about who I am, what I study and the kind of work I want to do.</p>
+      </div>
+
+      <div class="video-frame reveal" id="video-frame">
+        <video id="intro-video" controls preload="metadata" playsinline hidden>
+          <source src="assets/videos/introduction.mp4" type="video/mp4">
+        </video>
+        <div class="video-placeholder" id="video-placeholder">
+          <span class="play-ring" aria-hidden="true"><svg class="icon"><use href="#i-play"/></svg></span>
+          <p class="vp-title">My introduction video is coming soon.</p>
+          <p class="vp-sub">Check back later for a short personal introduction.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= CONTACT ======================= -->
+  <section class="section" id="contact" aria-labelledby="contact-title">
+    <div class="container contact-grid">
+      <div class="contact-info reveal">
+        <p class="eyebrow">Contact</p>
+        <h2 id="contact-title">Let’s connect</h2>
+        <p class="muted">I’m interested in opportunities in cybersecurity, IT, database management, software development and other CSE-related roles. Feel free to reach out by email or phone.</p>
+        <div class="contact-cta">
+          <a class="btn btn-primary" data-config="email" href="#"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>Send me an email</a>
+        </div>
+
+        <!-- ============ DOCUMENTS (CV + Cover Letter) ============
+             CV:           assets/documents/CV.pdf
+             Cover letter: save it as assets/documents/Cover_Letter.pdf,
+                           then set coverLetter in DOCUMENTS at the top of js/script.js -->
+        <div class="doc-list" aria-label="Documents">
+          <div class="doc-row">
+            <span class="doc-icon"><svg class="icon" aria-hidden="true"><use href="#i-cap"/></svg></span>
+            <div class="doc-name"><strong>Curriculum Vitae</strong><span>PDF</span></div>
+            <div class="doc-actions">
+              <a class="doc-btn" href="assets/documents/CV.pdf" target="_blank" rel="noopener">View</a>
+              <a class="doc-btn doc-btn-primary" href="assets/documents/CV.pdf" download="Rashna_Rahman_Richita_CV.pdf" data-download><svg class="icon" aria-hidden="true"><use href="#i-download"/></svg>Download</a>
+            </div>
+          </div>
+          <div class="doc-row">
+            <span class="doc-icon doc-icon-teal"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg></span>
+            <div class="doc-name"><strong>Cover Letter</strong><span>PDF</span></div>
+            <div class="doc-actions" data-doc="cover" hidden>
+              <a class="doc-btn" href="assets/documents/Cover_Letter.pdf" target="_blank" rel="noopener">View</a>
+              <a class="doc-btn doc-btn-primary" href="assets/documents/Cover_Letter.pdf" download="Rashna_Rahman_Richita_Cover_Letter.pdf" data-download><svg class="icon" aria-hidden="true"><use href="#i-download"/></svg>Download</a>
+            </div>
+            <span class="doc-pending" data-doc-pending="cover">Coming soon</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-card reveal">
+        <ul class="contact-list">
+          <li>
+            <span class="c-icon"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg></span>
+            <div><span class="c-label">Email</span><a data-config="email" href="#">richita.rashna.cse@gmail.com</a></div>
+          </li>
+          <li>
+            <span class="c-icon"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg></span>
+            <div><span class="c-label">Phone</span><a data-config="phone" href="#">01331766893</a></div>
+          </li>
+          <li>
+            <span class="c-icon"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg></span>
+            <div><span class="c-label">Location</span><span>Dhaka, Bangladesh</span></div>
+          </li>
+          <li>
+            <span class="c-icon"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg></span>
+            <div><span class="c-label">GitHub</span><a data-config="github" href="#" target="_blank" rel="noopener">github.com/Rashna-Rahman</a></div>
+          </li>
+          <li data-config-row="linkedin">
+            <span class="c-icon"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg></span>
+            <div><span class="c-label">LinkedIn</span><a data-config="linkedin" href="#" target="_blank" rel="noopener">rashna-rahman-richita</a></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ======================= FOOTER ======================= -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <a href="#home" class="wordmark">RICHITA<span>.</span></a>
+      <p class="muted">Rashna Rahman Richita · CSE Undergraduate, AIUB</p>
+    </div>
+    <nav aria-label="Footer">
+      <ul class="footer-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <ul class="footer-social" aria-label="Profiles">
+      <li><a data-config="github" href="#" target="_blank" rel="noopener" aria-label="GitHub"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg></a></li>
+      <li><a data-config="linkedin" href="#" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg></a></li>
+      <li><a data-config="email" href="#" aria-label="Email"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg></a></li>
+    </ul>
+  </div>
+  <div class="container footer-bottom">
+    <p>© <span id="year">2026</span> Rashna Rahman Richita. All rights reserved.</p>
+    <a href="#home" class="to-top-link">Back to top</a>
+  </div>
+</footer>
+
+<a href="#home" class="to-top" id="to-top" aria-label="Back to top">
+  <svg class="icon" aria-hidden="true"><use href="#i-arrow-up"/></svg>
+</a>
+
+<p class="toast" id="toast" role="status" aria-live="polite"></p>
+
+<script src="js/script.js"></script>
+</body>
+</html>
