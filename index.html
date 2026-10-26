@@ -10,16 +10,16 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="Rashna Rahman Richita | CSE Undergraduate">
   <meta property="og:description" content="Software development, web technologies, databases, cybersecurity and research on multilingual phishing detection.">
-  <meta property="og:image" content="assets/images/profile.jpg">
+  <meta property="og:image" content="profile.jpg">
 
-  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
 
   <!-- Font: Inter. If offline, system fonts are used automatically. -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="style.css">
   <script>document.documentElement.classList.add("js");</script>
 </head>
 <body>
@@ -68,11 +68,11 @@
       <li><a href="#achievements">Achievements</a></li>
       <li><a href="#meet-me">Video</a></li>
       <li><a href="#contact">Contact</a></li>
-      <li class="nav-cv-mobile"><a class="btn btn-primary btn-block" href="assets/documents/CV.pdf" download="Rashna_Rahman_Richita_CV.pdf" data-download>Download CV</a></li>
+      <li class="nav-cv-mobile"><a class="btn btn-primary btn-block" href="CV.pdf" download="Rashna_Rahman_Richita_CV.pdf" data-download>Download CV</a></li>
     </ul>
 
     <div class="nav-actions">
-      <a class="btn btn-primary btn-sm nav-cv" href="assets/documents/CV.pdf" download="Rashna_Rahman_Richita_CV.pdf" data-download aria-label="Download CV (PDF)">
+      <a class="btn btn-primary btn-sm nav-cv" href="CV.pdf" download="Rashna_Rahman_Richita_CV.pdf" data-download aria-label="Download CV (PDF)">
         <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg>Download CV
       </a>
       <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="nav-links">
@@ -102,11 +102,11 @@
 
         <div class="hero-actions">
           <a href="#projects" class="btn btn-primary">Explore My Projects</a>
-          <a href="assets/documents/CV.pdf" download="Rashna_Rahman_Richita_CV.pdf" data-download class="btn btn-outline">
+          <a href="CV.pdf" download="Rashna_Rahman_Richita_CV.pdf" data-download class="btn btn-outline">
             <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg>Download CV
           </a>
-          <!-- Cover letter button: appears automatically once DOCUMENTS.coverLetter is set in js/script.js -->
-          <a href="assets/documents/Cover_Letter.pdf" download="Rashna_Rahman_Richita_Cover_Letter.pdf" data-download data-doc="cover" class="btn btn-outline" hidden>
+          <!-- Cover letter button: appears automatically once DOCUMENTS.coverLetter is set in script.js -->
+          <a href="Cover_Letter.pdf" download="Rashna_Rahman_Richita_Cover_Letter.pdf" data-download data-doc="cover" class="btn btn-outline" hidden>
             <svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>Cover Letter
           </a>
           <a href="#contact" class="btn btn-ghost">Contact Me</a>
@@ -121,8 +121,8 @@
 
       <div class="hero-visual">
         <div class="portrait">
-          <!-- Replace assets/images/profile.jpg to change your photo -->
-          <img src="assets/images/profile.jpg" alt="Portrait of Rashna Rahman Richita" width="800" height="1000">
+          <!-- Replace profile.jpg to change your photo -->
+          <img src="profile.jpg" alt="Portrait of Rashna Rahman Richita" width="800" height="1000">
         </div>
       </div>
     </div>
@@ -223,7 +223,7 @@
   </section>
 
   <!-- ======================= PROJECTS ======================= -->
-  <!-- Project cards are generated from the PROJECTS list at the top of js/script.js -->
+  <!-- Project cards are generated from the PROJECTS list at the top of script.js -->
   <section class="section" id="projects" aria-labelledby="projects-title">
     <div class="container">
       <div class="section-head section-head-row reveal">
@@ -240,7 +240,7 @@
     </div>
   </section>
 
-  <!-- Project details popup (filled in by js/script.js) -->
+  <!-- Project details popup (filled in by script.js) -->
   <dialog class="modal" id="project-modal" aria-labelledby="modal-title">
     <div class="modal-inner">
       <button class="modal-close" type="button" id="modal-close" aria-label="Close project details">
@@ -300,7 +300,7 @@
         </figure>
 
         <!-- FUTURE: add your abstract, paper PDF or publication link here, e.g.
-             <p><a href="assets/documents/thesis.pdf">Read the thesis (PDF)</a></p> -->
+             <p><a href="thesis.pdf">Read the thesis (PDF)</a></p> -->
       </div>
     </div>
   </section>
@@ -385,8 +385,8 @@
   <!-- ======================= MEET ME (VIDEO) ======================= -->
   <!--
     HOW TO ADD YOUR VIDEO
-    Option A (local file): save your video as  assets/videos/introduction.mp4  and refresh.
-    Option B (YouTube): paste the video link into YOUTUBE_URL at the top of js/script.js.
+    Option A (local file): upload your video named introduction.mp4 next to index.html.
+    Option B (YouTube): paste the video link into YOUTUBE_URL at the top of script.js.
     Until one of them is set, a "coming soon" placeholder is shown.
   -->
   <section class="section section-alt" id="meet-me" aria-labelledby="video-title">
@@ -399,7 +399,7 @@
 
       <div class="video-frame reveal" id="video-frame">
         <video id="intro-video" controls preload="metadata" playsinline hidden>
-          <source src="assets/videos/introduction.mp4" type="video/mp4">
+          <source src="introduction.mp4" type="video/mp4">
         </video>
         <div class="video-placeholder" id="video-placeholder">
           <span class="play-ring" aria-hidden="true"><svg class="icon"><use href="#i-play"/></svg></span>
@@ -422,24 +422,24 @@
         </div>
 
         <!-- ============ DOCUMENTS (CV + Cover Letter) ============
-             CV:           assets/documents/CV.pdf
-             Cover letter: save it as assets/documents/Cover_Letter.pdf,
-                           then set coverLetter in DOCUMENTS at the top of js/script.js -->
+             CV:           CV.pdf
+             Cover letter: save it as Cover_Letter.pdf,
+                           then set coverLetter in DOCUMENTS at the top of script.js -->
         <div class="doc-list" aria-label="Documents">
           <div class="doc-row">
             <span class="doc-icon"><svg class="icon" aria-hidden="true"><use href="#i-cap"/></svg></span>
             <div class="doc-name"><strong>Curriculum Vitae</strong><span>PDF</span></div>
             <div class="doc-actions">
-              <a class="doc-btn" href="assets/documents/CV.pdf" target="_blank" rel="noopener">View</a>
-              <a class="doc-btn doc-btn-primary" href="assets/documents/CV.pdf" download="Rashna_Rahman_Richita_CV.pdf" data-download><svg class="icon" aria-hidden="true"><use href="#i-download"/></svg>Download</a>
+              <a class="doc-btn" href="CV.pdf" target="_blank" rel="noopener">View</a>
+              <a class="doc-btn doc-btn-primary" href="CV.pdf" download="Rashna_Rahman_Richita_CV.pdf" data-download><svg class="icon" aria-hidden="true"><use href="#i-download"/></svg>Download</a>
             </div>
           </div>
           <div class="doc-row">
             <span class="doc-icon doc-icon-teal"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg></span>
             <div class="doc-name"><strong>Cover Letter</strong><span>PDF</span></div>
             <div class="doc-actions" data-doc="cover" hidden>
-              <a class="doc-btn" href="assets/documents/Cover_Letter.pdf" target="_blank" rel="noopener">View</a>
-              <a class="doc-btn doc-btn-primary" href="assets/documents/Cover_Letter.pdf" download="Rashna_Rahman_Richita_Cover_Letter.pdf" data-download><svg class="icon" aria-hidden="true"><use href="#i-download"/></svg>Download</a>
+              <a class="doc-btn" href="Cover_Letter.pdf" target="_blank" rel="noopener">View</a>
+              <a class="doc-btn doc-btn-primary" href="Cover_Letter.pdf" download="Rashna_Rahman_Richita_Cover_Letter.pdf" data-download><svg class="icon" aria-hidden="true"><use href="#i-download"/></svg>Download</a>
             </div>
             <span class="doc-pending" data-doc-pending="cover">Coming soon</span>
           </div>
@@ -507,6 +507,6 @@
 
 <p class="toast" id="toast" role="status" aria-live="polite"></p>
 
-<script src="js/script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
