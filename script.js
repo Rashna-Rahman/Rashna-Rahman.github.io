@@ -318,18 +318,18 @@ document.addEventListener("DOMContentLoaded", () => {
     iframe.loading = "lazy";
     frame.appendChild(iframe);
   } else {
-    const fail = () => { video.hidden = true; placeholder.hidden = false; };
     if (VIDEO_READY) {
-      // Show the player immediately. Many phones and in-app browsers (Messenger,
-      // Facebook) do not preload video, so we must not wait for it to load first.
+      // Always show the player. Many phones and in-app browsers (Messenger,
+      // Facebook) do not preload video, so we never wait for it or hide it.
       video.hidden = false;
       placeholder.hidden = true;
     } else {
-      // No video yet: keep the placeholder unless an MP4 actually loads.
-      video.addEventListener("loadedmetadata", () => { video.hidden = false; placeholder.hidden = true; });
+      // No video yet: show the placeholder instead of the player.
+      video.hidden = true;
+      placeholder.hidden = false;
+      const help = document.querySelector(".video-help");
+      if (help) help.hidden = true;
     }
-    video.addEventListener("error", fail);
-    $("source", video).addEventListener("error", fail);
   }
 
   /* ---- Cover letter: show buttons only when it is set ---- */

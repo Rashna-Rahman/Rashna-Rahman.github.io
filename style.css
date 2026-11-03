@@ -720,3 +720,7 @@ p  { margin: 0 0 1em; }
   .cert-row { grid-template-columns: 1fr; }
   .contact-cta .btn { flex: 1 1 100%; }
 }
+
+/* Small help link under the introduction video */
+.video-help { margin: 0.9rem 0 0; font-size: 0.9rem; color: var(--text-muted); text-align: center; }
+.video-help[hidden] { display: none; }

@@ -19,7 +19,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=3">
   <script>document.documentElement.classList.add("js");</script>
 </head>
 <body>
@@ -397,15 +397,18 @@
         <p class="muted">A short video introduction about who I am, what I study and the kind of work I want to do.</p>
       </div>
 
-      <div class="video-frame reveal" id="video-frame">
-        <video id="intro-video" controls preload="metadata" playsinline poster="video-poster.jpg">
-          <source src="introduction.mp4#t=0.1" type="video/mp4"><!-- #t=0.1 makes Android phones show the first frame instead of a black box -->
+      <div class="video-col reveal">
+      <div class="video-frame" id="video-frame">
+        <video id="intro-video" controls playsinline preload="none" poster="video-poster.jpg?v=3" src="introduction.mp4?v=3">
+          Your browser cannot play this video. <a href="introduction.mp4?v=3">Open the video</a>.
         </video>
         <div class="video-placeholder" id="video-placeholder" hidden>
           <span class="play-ring" aria-hidden="true"><svg class="icon"><use href="#i-play"/></svg></span>
           <p class="vp-title">My introduction video is coming soon.</p>
           <p class="vp-sub">Check back later for a short personal introduction.</p>
         </div>
+      </div>
+      <p class="video-help">Video not playing? <a href="introduction.mp4?v=3" target="_blank" rel="noopener">Open it directly</a>.</p>
       </div>
     </div>
   </section>
@@ -507,6 +510,6 @@
 
 <p class="toast" id="toast" role="status" aria-live="polite"></p>
 
-<script src="script.js"></script>
+<script src="script.js?v=3"></script>
 </body>
 </html>
