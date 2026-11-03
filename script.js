@@ -18,6 +18,10 @@ const LINKS = {
    If both exist, YouTube is used. */
 const YOUTUBE_URL = "";
 
+// true  = introduction.mp4 is uploaded: the player is shown straight away on every device.
+// false = no video yet: the "coming soon" placeholder is shown.
+const VIDEO_READY = true;
+
 /* ---------- 2b. Documents ----------
    cv:          your CV file (already in place).
    coverLetter: leave "" until your cover letter is ready. Then save it as
@@ -314,9 +318,16 @@ document.addEventListener("DOMContentLoaded", () => {
     iframe.loading = "lazy";
     frame.appendChild(iframe);
   } else {
-    // Placeholder stays visible unless the MP4 actually loads.
-    video.addEventListener("loadedmetadata", () => { video.hidden = false; placeholder.hidden = true; });
     const fail = () => { video.hidden = true; placeholder.hidden = false; };
+    if (VIDEO_READY) {
+      // Show the player immediately. Many phones and in-app browsers (Messenger,
+      // Facebook) do not preload video, so we must not wait for it to load first.
+      video.hidden = false;
+      placeholder.hidden = true;
+    } else {
+      // No video yet: keep the placeholder unless an MP4 actually loads.
+      video.addEventListener("loadedmetadata", () => { video.hidden = false; placeholder.hidden = true; });
+    }
     video.addEventListener("error", fail);
     $("source", video).addEventListener("error", fail);
   }

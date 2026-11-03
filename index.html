@@ -398,10 +398,10 @@
       </div>
 
       <div class="video-frame reveal" id="video-frame">
-        <video id="intro-video" controls preload="metadata" playsinline hidden>
+        <video id="intro-video" controls preload="metadata" playsinline poster="video-poster.jpg">
           <source src="introduction.mp4#t=0.1" type="video/mp4"><!-- #t=0.1 makes Android phones show the first frame instead of a black box -->
         </video>
-        <div class="video-placeholder" id="video-placeholder">
+        <div class="video-placeholder" id="video-placeholder" hidden>
           <span class="play-ring" aria-hidden="true"><svg class="icon"><use href="#i-play"/></svg></span>
           <p class="vp-title">My introduction video is coming soon.</p>
           <p class="vp-sub">Check back later for a short personal introduction.</p>
